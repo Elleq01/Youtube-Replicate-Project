@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> REVOLT page
+</title>
+<link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+  <style>
+  .logo{
+    background-color: red;
+    font-size: 35px;
+    border: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+   
+  }
+    
+  </style>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">R E V O L T</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="video.html/Weekend.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2 class=Video Tutorial </h2> 
+      <h3>Let's get it</h3>
+      <p>Today i'll be showing you guys how to add JWPLAYER media to your project.</p>
+      <a href="#">Click to watch Tutorial</a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Destination</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <script>
+ const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+    </script>
+</body>
+</html>
